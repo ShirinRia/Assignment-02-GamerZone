@@ -4,10 +4,24 @@
     padding:0;
     font-family: 'Work Sans', sans-serif;
 }
+:root{
+    --primary-color:#FF42A5;
+    --secondary-color:#A24FF0;;
+    --third-color:#534C64;
+}
+.btn{
+    background-color:var(--primary-color);
+}
+.logo h3 span{
+    color:var(--primary-color);
+}
+.instant-play-left p, figurecaption,.banner-text li{
+    color:var(----third-color);
+}
 .btn{
     border:none;
     border-radius: 48px;
-    background-color:#FF42A5;
+    /* background-color:#FF42A5; */
     color: #FFF;
     font-size: 1.25rem;
     font-weight: 600;
@@ -49,9 +63,9 @@ header{
     font-size: 2.8rem;
     font-weight: 700;
 }
-.logo h3 span{
+/* .logo h3 span{
     color:#FF42A5;
-}
+} */
 /* menus design */
 .menus{
     display: flex;
@@ -108,7 +122,7 @@ header{
 }
 .banner-text li{
     list-style: none;
-    color: #534C64;
+    /* color: #534C64; */
 /* text-align: center; */
     font-size: 1.25rem;
     font-weight: 500;
@@ -121,8 +135,8 @@ header{
     height: 24px;
 }
 
-
 /* main section */
+/* funny videos */
 section{
     padding:50px 175px;
    
@@ -153,7 +167,7 @@ figure{
 }
 figurecaption{
     width: 100%;
-    color: #534C64;
+    /* color: #534C64; */
     font-size: 1rem;
     font-weight: 500;
 
@@ -209,7 +223,7 @@ figure:hover .overlay{
 }
 .instant-play-left p{
     width:80%;
-    color: #534C64;
+    /* color: #534C64; */
     /* margin: 0 auto; */
     margin-left: auto;
     font-size: 1.125rem;
@@ -286,7 +300,6 @@ footer .logo, .footer-keywrd{
 }
 .footer-keywrd,.footerkeyword-2,.footer-icon{
     display: flex;
-   
     gap:30px;
 }
 footer p{
