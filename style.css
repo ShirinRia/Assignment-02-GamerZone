@@ -19,6 +19,7 @@
 .primary{
     margin-right: 24px;
 }
+
 .secondary{
     background-color:#4EC5F7;
     }
@@ -140,18 +141,50 @@ section{
 .box{
     max-width: 342px;
     max-height: 400px;
+    position: relative;
 }
 .box img{
     max-width: 100%;
     max-height: 100%;
 }
-
+figure{
+    cursor: pointer;
+}
 figurecaption{
     width: 100%;
     color: #534C64;
     font-size: 1rem;
     font-weight: 500;
 
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom: 0;
+    opacity: 0;
+    background-color:rgb(24, 23, 23);
+    background-blend-mode: overlay;
+    color:#f80683;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    height:81.2%;
+    border-radius:8px;
+    transition: opacity ease-in-out 0.3s;
+}
+figure:hover .overlay{
+    opacity:0.8;
+    border: 3px solid #FF42A5; 
+}
+
+.content{
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 /* instant play */
@@ -316,6 +349,9 @@ footer p{
         justify-items:center;
        
     }
+    .overlay{
+        height: 100%;
+    }
 
     /* instant play */
 .instant-play-container{
@@ -371,5 +407,98 @@ margin:0 auto;
  footer p{
     display :block;
 }
+}
+
+/* tablet view */
+@media screen and (min-width: 576px) and (max-width:960px){
+
+    /* banner */
+    .banner{
+        margin:0 auto;
+        flex-direction: column-reverse;
+        padding:0px;
+        background-image:none;
+    }
+    ul{
+        width:50%;
+        margin:0 auto;
+    }
+    .banner-text,.banner-image{
+        width:100%;
+    }
+    .banner-image{
+        padding: 20px;
+    }
+    .banner-text{
+        background-image: url('./images/Group14.png');
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size:100% 100%;
+        text-align: center;
+        /* padding:100px; */
+    }
+    .banner-text li{
+        text-align:left;
+    }
+
+    /* main */
+    section{
+        margin:0px auto;
+        text-align: center;
+        padding:35px 7px;
+    }
+    .boxes{
+        grid-template-columns: repeat(1,1fr);
+        gap:70px;
+       
+        justify-items:center;
+       
+    }
+    .overlay{
+        height: 100%;
+    }
+
+    /* instant play */
+.instant-play-container{
+ flex-direction: column;   
+ gap:70px;
+}
+.instant-play-left,.instant-play-right {
+    width:100%;
+    text-align: center;
+    margin:0 auto;
+    }
+.instant-play-left p{
+text-align:center;
+margin:0 auto;
+}
+.bigimage {
+    width:70%;
+    height:100%;
+}
+.second-img{
+    top:20rem;
+    left:2rem;
+    /* border:2px solid red; */
+    width: 30%;
+}
+
+
+/* games */
+.games{
+    margin : 50px 0 0 0;
+}
+.gamescontainer{
+    /* display: grid;
+    grid-template-columns: repeat(3,1fr); */
+    gap: 35px;
+   
+     
+ }
+ .game-btn{
+    width:max-content;
+ }
+
+
 }
 
