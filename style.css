@@ -122,7 +122,7 @@ header{
 
 /* main section */
 section{
-    padding:100px 175px;
+    padding:50px 175px;
    
 }
 .funny-videos h2, .funny-videos p{
@@ -170,6 +170,9 @@ figurecaption{
     font-size: 3rem;
     font-weight: 700;
 }
+.instant-play-left h2 span,.funny-videos h2 span{
+   color: #8758F1;
+}
 .instant-play-left p{
     width:80%;
     color: #534C64;
@@ -197,7 +200,9 @@ figurecaption{
 
 /* game section */
 .games{
-    margin:0;
+    margin:100px 0 0 0;
+    padding-top:100px;
+    padding-bottom: 100px;
     background-color: rgba(255, 66, 164, 0.1);
 }
 .gamescontainer{
@@ -205,7 +210,8 @@ figurecaption{
    flex-wrap: wrap;
    align-content:center;
    justify-content: center;
-    gap: 15px;
+    column-gap: 5px;
+    row-gap: 15px;
     
 }
 .game-btn img{
@@ -231,9 +237,24 @@ figurecaption{
 }
 footer{
     background-color:#0B0223;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+    padding:100px;
 }
-footer .logo, footer-keywrd{
+footer .logo, .footer-keywrd{
     color:white;
+}
+.footerkeyword-2, footer p{
+    color:rgba(255, 255, 255, 0.60);
+}
+.footer-keywrd,.footerkeyword-2,.footer-icon{
+    display: flex;
+    gap:30px;
+}
+footer p{
+    display :inline-block;
 }
 
 /* footer */
@@ -257,7 +278,7 @@ footer .logo, footer-keywrd{
     .banner{
         margin:0 auto;
         flex-direction: column-reverse;
-        padding:35px 20px;
+        padding:0px;
         background-image:none;
     }
     ul{
@@ -267,13 +288,16 @@ footer .logo, footer-keywrd{
     .banner-text,.banner-image{
         width:100%;
     }
+    .banner-image{
+        padding: 20px;
+    }
     .banner-text{
         background-image: url('./images/Group14.png');
         background-repeat: no-repeat;
         background-position: left;
         background-size:100% 100%;
         text-align: center;
-        padding:100px;
+        /* padding:100px; */
     }
     .banner-text li{
         text-align:left;
@@ -320,13 +344,32 @@ margin:0 auto;
 
 
 /* games */
+.games{
+    margin : 100px 0 0 0;
+}
 .gamescontainer{
     display: grid;
     grid-template-columns: repeat(3,1fr);
      
  }
  .game-btn{
-    width: max-content;
+    width:fit-content;
  }
+
+ /* footer */
+ footer{
+    text-align: center;
+ }
+ .footer-keywrd,.footer-icon{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+ }
+ .footerkeyword-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+ }
+ footer p{
+    display :block;
+}
 }
 
