@@ -284,6 +284,7 @@ footer .logo, .footer-keywrd{
 }
 .footer-keywrd,.footerkeyword-2,.footer-icon{
     display: flex;
+   
     gap:30px;
 }
 footer p{
@@ -384,12 +385,19 @@ margin:0 auto;
     margin : 100px 0 0 0;
 }
 .gamescontainer{
+    /* font-size: 0.6em; */
+    padding:0 20px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-     
+    column-gap:5px;
+   row-gap:35px;
+ margin:0 10px;
  }
  .game-btn{
     width:fit-content;
+    font-size:0.6em;
+    padding-left:5px;
+    padding-right: 8px;
  }
 
  /* footer */
@@ -397,14 +405,18 @@ margin:0 auto;
     text-align: center;
  }
  .footer-keywrd,.footer-icon{
+    width:max-content;
     display: grid;
     grid-template-columns: repeat(3,1fr);
  }
  .footerkeyword-2{
+    width:max-content;
     display: grid;
     grid-template-columns: repeat(2,1fr);
  }
  footer p{
+    margin:0 auto;
+    width:max-content;
     display :block;
 }
 }
